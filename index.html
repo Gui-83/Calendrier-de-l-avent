@@ -119,7 +119,7 @@
 <body>
   <header>
     <h1>🎄 Calendrier de l'Avent</h1>
-    <p>Une photo, un souvenir, chaque jour jusqu'à Noël ❤️</p>
+    <p>Une photo, un souvenir, chaque jour jusqu'à Noël</p>
   </header>
 
   <div class="calendar" id="calendar"></div>
@@ -166,7 +166,7 @@
       cell.appendChild(img);
       cell.addEventListener('click', () => {
         if (day <= currentDay) {
-            overlayImg.src = `photos/${day}.png`;
+            overlayImg.src = `${day}.png`;
             overlay.style.display = 'flex';
 
             setTimeout(() => {
@@ -182,3 +182,4 @@
   </script>
 </body>
 </html>
+
